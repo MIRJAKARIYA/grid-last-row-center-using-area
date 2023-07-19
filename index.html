@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            border: 1px solid red;
+            display: grid;
+            grid-template-areas: 
+            "a a b b c c d d e e"
+            ". f f g g h h i i ."
+            ;
+            gap: 10px;
+        }
+        .item{
+            min-height: 200px;
+        }
+        .tem-1{
+            background-color: red;
+            grid-area: a;
+        }
+        .tem-2{
+            background-color: green;
+            grid-area: b;
+        }
+        .tem-3{
+            background-color: brown;
+            grid-area: c;
+        }
+        .tem-4{
+            background-color: blue;
+            grid-area: d;
+
+        }
+        .tem-5{
+            background-color: aqua;
+            grid-area: e;
+
+        }
+        .tem-6{
+            background-color: blueviolet;
+            grid-area: f;
+
+        }
+        .tem-7{
+            background-color: cadetblue;
+            grid-area: g;
+
+        }
+        .tem-8{
+            background-color: chartreuse;
+            grid-area: h;
+
+        }
+        .tem-9{
+            background-color: slategrey;
+            grid-area: i;
+
+        }
+        @media screen and (max-width:400px) {
+            .grid-container{
+            border: 1px solid red;
+            display: grid;
+            grid-template-areas: 
+            "a a b b c c"
+            "d d e e f f"
+            "g g h h i i"
+            ;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item tem-1">item-1</div>
+        <div class="item tem-2">item-2</div>
+        <div class="item tem-3">item-3</div>
+        <div class="item tem-4">item-4</div>
+        <div class="item tem-5">item-5</div>
+        <div class="item tem-6">item-6</div>
+        <div class="item tem-7">item-7</div>
+        <div class="item tem-8">item-8</div>
+        <div class="item tem-9">item-9</div>
+
+    </div>
+</body>
+</html>
